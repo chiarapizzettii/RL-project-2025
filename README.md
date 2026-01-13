@@ -5,15 +5,15 @@
 This project simulates a duopoly market where two competing agents (sellers of coffee capsules) aim to maximize their profits by dynamically adjusting their prices. We explore and compare two different Reinforcement Learning approaches:
 1. **Independent Q-learning**
 2. **Deep Q-Networks (DQN)**
-The environment is build using the 'Gymnasium' framework, simulating a linear demand model where profit is influenced by both the agent's own price and the competitor's price.
+The environment is build using the `Gymnasium` framework, simulating a linear demand model where profit is influenced by both the agent's own price and the competitor's price.
 
 ## **Market Environment** ##
 The simulation includes:
 - **Agents**: 2 competing sellers.
 - **Action Space**: Discrete price choices from a predefined list (e.g., [2.99, 3.48, ..., 5.99]).
 - **State Space**: Each agent observes its own previous price and the competitor's previous price.
-- **Reward**: Calculated as the total profit: 'Profit = (Price - Cost) * Demand'.
-- **Demand Model**: 'Demand = a - b * own_price + c * (competitor_price - own_price)'.
+- **Reward**: Calculated as the total profit: `Profit = (Price - Cost) * Demand`.
+- **Demand Model**: `Demand = a - b * own_price + c * (competitor_price - own_price)`.
 
 ## **Algorithms Implemented**##
 ### **1.Independent Q-learning** ###
@@ -31,14 +31,14 @@ The project includes a detailed evaluation section comparing the average rewards
 
 ## **Requirements** ##
 To run this notebook, you will need the following libraries:
-- 'numpy'
-- 'gymnasium'
-- 'matplotlib'
-- 'torch' (for the DQN implementation)
+- `numpy`
+- `gymnasium`
+- `matplotlib`
+- `torch` (for the DQN implementation)
 
 ## **How to Run** ##
 1. Clone the repository.
-2. Install dependencies: 'pip install gymnasium numpy matplotlib torch'.
-3. Open 'RL Project.ipynb' in Jupyter Notebook or Google Colab.
+2. Install dependencies: `pip install gymnasium numpy matplotlib torch`.
+3. Open `RL Project.ipynb` in Jupyter Notebook or Google Colab.
 4. Run all cells to see the training process and the final performance comparison.
 
